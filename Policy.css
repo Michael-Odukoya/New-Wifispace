@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+:root{
+    --bg-colour:#fff;
+    --second-bg-colour:#1513d0;
+    --text-color:black;
+    --main-color: #c0c0c0;
+}
+.navBar{
+    display: flex;
+    background-color: var(--bg-colour);
+    padding: 1rem 4rem;
+    box-shadow: 0.5px 0.5px 10px #5f5f5f;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    gap: 10rem;
+}
+.navBar p{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.navBar p img{
+    width: 55px;
+    height: 45px;
+}
+#sideNav{
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background:var(--second-bg-colour);
+    z-index: 2;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left:20px; 
+    font-size: 1.2rem; 
+}
+nav ul a{
+    color: var(--bg-colour);
+    text-decoration: none;
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}
+nav .headerA a{
+    color:var(--bg-colour);
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+}
+nav .headerA a:hover{
+    color: none;
+}
+nav .headerA .login{
+    border: none;
+    margin-right: 0;
+    padding: 0px 0px;
+}
+.body{
+    padding-top: 8rem;
+}
+.body h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+span{
+    color: var(--second-bg-colour);
+}
+.txt{
+    padding: 3rem 7rem;
+    text-align: center;
+}
+.txt h2{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+.txt p{
+    font-size: 1.3rem;
+    padding-bottom: 3rem;
+}
+ol li{
+    font-size: 1.3rem;
+    text-align: left;
+    padding-bottom: 1.5rem;
+}
+#footer{
+    margin-top: 3rem;
+    padding: 4rem 5rem;
+    background-color: var(--main-color);
+}
+.f-top{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--bg-colour);
+}
+.f1 p{
+    font-size: 1.5rem;
+}
+.f1 i{
+    color: var(--second-bg-colour);
+    font-size: 2rem;
+}
+.f2 a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 1rem;
+}
+.f2 a:hover{
+    color: var(--second-bg-colour);
+}
+.f2 a i{
+    color: var(--second-bg-colour);
+    font-size: 1.5rem;
+}
+.f-down{
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+.f-down a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.f-down a:hover{
+    color: var(--second-bg-colour);
+}
+
+@media screen and (max-width:1140px){
+    .txt{
+        padding: 3rem 3em;
+    }
+}
+@media screen and (max-width:900px) {
+    .navBar{
+        padding: 0.5rem 1rem;
+    }
+    .navBar p{
+        font-size: 1.5em;
+    }
+    .navBar p img{
+        height: 45px;
+        width: 38px;
+    }
+    .f-top{
+        display: block;
+    }
+    .f1{
+        padding-bottom: 3rem;
+    }
+    .f1 p{
+        border-bottom: 2px solid var(--bg-colour);
+        padding-bottom: 1rem;
+    }
+    .f2 a{
+        display: block;
+        padding-bottom: 1rem;
+        margin-left: 0px;
+    }
+    .f-down{
+        display: block;
+    }
+    .f-down a{
+        display: block;
+        padding-bottom: 2rem;
+    }
+}

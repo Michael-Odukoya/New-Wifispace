@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wifispace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="navBar">
+        <p><img src="./img/logo.png"> WifiSpace</p>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#features">FEATURES</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#testimonial">TESTIMONIALS</a></li>
+                    <li><a href="#footer">CONTACT US</a></li>
+                </ul>
+                <div class="region">
+                    <div class="theme">
+                        <img src="./img/sun.png" id="theme">
+                    </div>
+                    <div class="headerA">
+                        <a class="login" onclick="hideshow()">Login</a>
+                        <a href="https://wa.me/08144872744">Register Now</a>
+                        <div class="headerB" id="loginhide">
+                            <form id="form">
+                                <label for="username"><i class='bx bx-user'></i></label>
+                                <input type="text" name="username" placeholder="Enter your username">
+                                <label for="password"><i class='bx bxs-key'></i></label>
+                                <input type="password" name="password" placeholder="Input your Password">
+                                <input type="submit" class="login-btn" value="Login">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="./img/menu.png" id="menu">
+        </div>
+    </header>
+    <div id="home">
+    <div class="slider">
+        <div class="myslider fade" style="display: block;">
+            <div class="txt">
+                <h1>Internet Without Interference</h1>
+                <p>Faster Than Your imagination</p>
+            </div>
+            <img src="./img/home1.jpg" width="100%" height="100%">
+        </div>
+        <div class="myslider fade" style="display: block;">
+            <div class="txt">
+                <h1>No Limit, it's Truly Unlimited</h1>
+                <p>Join The Unlimited Fiber Revolution Today</p>
+            </div>
+            <img src="./img/home2.jpg" width="100%" height="100%">
+        </div>
+        <div class="myslider fade" style="display: block;">
+            <div class="txt">
+                <h1>Buffering? Not on our Watch</h1>
+                <p>Embrace Unlimited Fiber Broadband Internet</p>
+            </div>
+            <img src="./img/home3.jpg" width="100%" height="100%">
+        </div>
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>The Connection that Counts</h1>
+                <p>Easy And Fast To Connect</p>
+            </div>
+            <img src="./img/home4.jpg" width="100%" height="100%">
+        </div>
+        <div class="myslider fade">
+            <div class="txt">
+                <h1>Always on. Always Reliable</h1>
+                <p>Avaliable At All Time To keep You Going</p>
+            </div>
+            <img src="./img/home5.png" width="100%" height="100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dotsbox">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+
+        </div>
+    </div>
+    </div>
+    <div id="features">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why Choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>High Speed</h1>
+                <div class="features-desc">
+                    <div class="feature-img">
+                        <img src="./img/f1.png">
+                    </div>
+                    <div class="feature-text">
+                        <p>We offer the best internet speed here at Smart Technologies. So far, our clients have proven to trust our services and have given us positive feedbacks concerning this.Our main goal is to make our customers happy.</p>
+                    </div>
+                </div>
+                <h1>Installation & Setup</h1>
+                <div class="features-desc">
+                    <div class="feature-img">
+                        <img src="./img/f2.png">
+                    </div>
+                    <div class="feature-text">
+                        <p>You don't have to manually do the installation yourself as we take of all that here at Smart Technologies. You can get your internet connection up and running in no time through wide area coverage.</p>
+                    </div>
+                </div>
+                <h1>24/7 Services</h1>
+                <div class="features-desc">
+                    <div class="feature-img">
+                        <img src="./img/f3.png">
+                    </div>
+                    <div class="feature-text">
+                        <p>By using our services, you dont have to worry about your connection going off at any point. We provide 24/7 services that covers your entire day and night.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="features-img">
+                <img src="./img/f4.jpg" >
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="title-text">
+            <p>OUR SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+        <div class="services-container">
+            <div class="services-box">
+                <img src="./img/s1.png">
+                <h3>Public Hotspot And Fast Internet</h3>
+                <p>This is a secured Public Wi-Fi Hotspot that can get you connected to WiFiSpace Unlimited fast internet anywhere,on the street, from your house, at the park, at events, transport stations, in public vehicles for your quick and safer transactions at the best prices.</p>
+                <!-- <a href="./plans.html">Buy Data Now</a> -->
+            </div>
+            <div class="services-box">
+                <img src="./img/s2.png">
+                <h3>Shared Wireless Through Wide Connection</h3>
+                <p>This is a wide area special indoor/outdoor wireless router allowing you to connect intensively to the internet in your home, privatized for you and your family, group of users, small offices to use unlimited internet allocated for them specially.</p>
+                <!-- <a href="./plans.html">Buy Data Now</a> -->
+            </div>
+            <div class="services-box">
+                <img src="./img/s3.png">
+                <h3>Cheap And Secure Internet</h3>
+                <p>We offer cheap and secure internet by setting up and managing your firewall, net-attack, cyber-attack, captive portal,access control, network managements, network shared folder e.t.c. With good anti-virus service, endpoint protection and internet security.</p>
+                <!-- <a href="./plans.html">Buy Data Now</a> -->
+            </div>
+        </div>
+    </div>
+    <div id="testimonial">
+        <div class="title-text">
+            <p>Testimonial</p>
+            <h1>What Client Says</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="textimonial-col">
+                <div class="user">
+                    <img src="./img/t1.png">
+                    <div class="user-info">
+                        <H4>Bet9ja</H4>
+                        <a href="#">bet9ja.com</a>
+                    </div>
+                </div>
+                <p>So far, wifispace has not diappointed me a bit. It has been good, fast, and very reliable. This is a great company making access to internet very easy to the global world.</p>
+            </div>
+            <div class="textimonial-col">
+                <div class="user">
+                    <img src="./img/t2.jpg">
+                    <div class="user-info">
+                        <H4>AccessBet</H4>
+                        <a href="#">accessbet.com</a>
+                    </div>
+                </div>
+                <p>It has been very good and reliable. This is a great company making access to internet very easy to the global world</p>
+            </div>
+            <div class="textimonial-col">
+                <div class="user">
+                    <img src="./img/beetos.jpeg">
+                    <div class="user-info">
+                        <H4>Beetos Computer College</H4>
+                        <a href="#"></a>
+                    </div>
+                </div>
+                <p>My business has never been more better since i started using wifispace fast internet. Their services are good and very reliable and the fact that they offer exclusively unlimited internet access got me amazed!</p>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="f-top">
+            <div class="f1">
+                <p><i class='bx bx-message'></i> Contact Us</p>
+            </div>
+            <div class="f2">
+                <a href="https://wa.me/08144872744"><i class='bx bxl-whatsapp' ></i> Whatsapp</a>
+                <a href="#"><i class='bx bxl-facebook'></i> Facebook</a>
+                <a href="#"><i class='bx bxl-instagram'></i> Instagram</a>
+                <a href="#"><i class='bx bx-envelope'></i> Email</a>
+            </div>
+        </div>
+        <div class="f-down">
+            <a href="./policy.html">Privacy And Data Protection Policy</a>
+            <a href="./policy.html">Terms And Condition</a>
+        </div>
+        <p>Copyright & copy 2024 by Michael Odukoya | All Rights Reserved. </p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="login.js"></script>
+
+<script>
+//login 
+function hideshow(){
+var loginshow = document.getElementById("loginhide");
+
+    if (loginshow.style.display === "block"){
+        loginshow.style.display = "none";
+    }
+    else{
+        loginshow.style.display = "block";
+    }
+}
+</script>
+
+<script>
+    //Theme js //
+var theme = document.getElementById("theme");
+    
+    theme.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme")){
+            theme.src = "img/moon.png";
+        }else{
+            theme.src = "img/sun.png";
+        }
+    }
+</script>
+</body>
+</html>
