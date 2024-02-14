@@ -116,6 +116,7 @@ nav input{
     margin-top: 10px;
     outline: none;
     background-color:#ffffff9a ;
+    color: #222;
 }
 
 nav .login-btn{
@@ -205,8 +206,8 @@ nav .login-btn{
 }
 .dot{
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    /* width: 1px;
+    height: 1px; */
     border: 3px solid var(--bg-colour2);
     border-radius: 50%;
     margin: 0 10px;
@@ -659,7 +660,7 @@ nav .login-btn{
         padding: 4rem 3rem;
     }
 } 
-@media screen and (max-width:446px){
+/* @media screen and (max-width:446px){
     .dotsbox{
         left: 40%;
         transform: translate(-40%);
@@ -670,4 +671,4 @@ nav .login-btn{
         left: 30%;
         transform: translate(-30%);
     }
-}
+} */
